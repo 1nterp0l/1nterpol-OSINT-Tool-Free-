@@ -1,18 +1,63 @@
-print just run bro
-python 1nterpol.py
 
+# 🌐 1NTERPOL MATRIX RADAR | Advanced Cyber-Detector Framework
 
-### 3. Enregistrer les modifications
-1. Une fois votre texte rédigé, faites défiler la page vers le bas jusqu'à la section **"Commit changes"**.
-2. Écrivez un court message de commit (par exemple : *"Ajout du fichier README explicatif"*).
-3. Cliquez sur le bouton **"Commit changes"**.
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-6.0-blue" alt="Version">
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
+  <img src="https://img.shields.io/badge/Language-Python-orange" alt="Language">
+</p>
+
+## 📖 Introduction
+**1NTERPOL Matrix Radar** est une plateforme modulaire d'investigation numérique, conçue pour automatiser les tâches critiques de reconnaissance (Recon) et d'audit de sécurité. Dans un environnement où la collecte d'informations est le pilier de toute enquête, cet outil centralise la puissance de traitement pour offrir une vision claire, structurée et rapide des infrastructures cibles.
+
+Développé en **Python pur**, ce framework élimine la lourdeur des dépendances externes tout en garantissant des performances de classe industrielle grâce à son architecture orientée objet et son moteur de traitement multithread.
 
 ---
 
-### Conseils supplémentaires pour améliorer votre dépôt :
+## 🚀 Fonctionnalités Avancées
 
-* **Ajouter une description courte :** Cliquez sur la petite icône en forme de roue dentée (paramètres) à côté de la section **"About"** (dans la colonne de droite). Vous pourrez y ajouter une description concise et des "Topics" (mots-clés comme `osint`, `python`, `security`) pour que votre projet soit plus facile à trouver.
-* **Ajouter un fichier `.gitignore` :** Si votre outil génère des fichiers temporaires ou utilise des clés API, créez un fichier `.gitignore` pour éviter de les pousser sur GitHub par erreur.
-* **Ajouter une licence :** Cliquez sur "Add file" > "Create new file", nommez-le `LICENSE` et choisissez une licence standard (comme MIT ou Apache 2.0). Cela clarifie la manière dont les autres peuvent utiliser votre code.
+### 🔍 Reconnaissance Réseau & Empreinte Digitale
+* **Banner Grabbing Aggressif :** Identification précise des services via des handshakes personnalisés. Ne vous contentez plus de savoir qu'un port est ouvert : découvrez la version exacte du logiciel tournant en arrière-plan.
+* **Scan de Ports Multithreadé :** Moteur haute performance utilisant `ThreadPoolExecutor` pour scanner des plages entières en un temps record.
+* **Analyse de Topologie :** Détection des vecteurs d'attaque et analyse de la réactivité réseau.
 
-Avez-vous besoin d'aide pour rédiger une partie spécifique de la documentation de votre outil ?
+### 🛡️ Audit de Sécurité & Veille
+* **Hardening Check :** Analyse des en-têtes de sécurité HTTP, vérification de la présence de politiques HSTS, et détection de CMS.
+* **DNS Intelligence :** Audit approfondi de la configuration des zones DNS (SPF, DMARC, MX) pour détecter les failles d'usurpation (spoofing) et les mauvaises configurations de domaine.
+* **API Enrichment :** Intégration native des flux de données Shodan et VirusTotal pour corréler vos découvertes locales avec des bases de menaces mondiales.
+
+### 📊 Gestion de l'Investigation
+* **Base de Données SQLite :** Chaque action est horodatée et archivée localement. Idéal pour le suivi de dossier sur le long terme.
+* **Générateur de Rapports :** Exportation automatisée des logs pour structurer vos découvertes.
+* **Mode CLI "Ninja" :** Automatisez vos tâches sans interface graphique, parfait pour l'intégration dans des scripts de défense ou de tests d'intrusion.
+
+---
+
+## 🛠️ Architecture du Framework
+
+Le moteur **"The Architect" (v6.0)** est structuré pour permettre une scalabilité maximale :
+
+1. **`CyberTools` (Core) :** Gère la persistance des données et les interfaces de bas niveau.
+2. **`Scanner` (Moteur) :** Implémente la logique métier d'analyse réseau et système.
+3. **`MenuHandler` (Interface) :** Offre une navigation fluide entre les modules d'investigation.
+
+
+
+---
+
+## ⚙️ Installation & Mise en route
+
+### Prérequis
+* Python 3.8 ou supérieur.
+* Aucune bibliothèque tierce n'est requise (Standard Library uniquement).
+
+### Installation
+```bash
+# Cloner le dépôt
+git clone [https://github.com/votre-nom/interpol-matrix-radar.git](https://github.com/votre-nom/interpol-matrix-radar.git)
+
+# Entrer dans le répertoire
+cd interpol-matrix-radar
+
+# Lancer le framework
+python main.py
