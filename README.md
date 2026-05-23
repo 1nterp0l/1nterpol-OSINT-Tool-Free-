@@ -59,8 +59,18 @@ git clone [https://github.com/votre-nom/interpol-matrix-radar.git](https://githu
 # Entrer dans le répertoire
 cd interpol-matrix-radar
 
-# Lancer le framework
-python main.py
+## 📷 Aperçu
+
 <p align="center">
   <img src="interpol.png" width="900">
 </p>
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/ton-user/interpol-matrix-radar.git
+
+cd interpol-matrix-radar
+
+python main.py
+```
