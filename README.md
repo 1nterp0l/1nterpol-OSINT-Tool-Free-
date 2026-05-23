@@ -61,3 +61,6 @@ cd interpol-matrix-radar
 
 # Lancer le framework
 python main.py
+<p align="center">
+  <img src="interpol.png" width="900">
+</p>
