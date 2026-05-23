@@ -91,13 +91,7 @@ Le moteur **The Architect v6.0** est structuré autour de plusieurs composants :
 | `Database Engine` | Archivage SQLite |
 | `Recon Engine` | Modules OSINT |
 
----
 
-# 📷 Aperçu
-
-<p align="center">
-  <img src="interpol.png" width="100%">
-</p>
 
 ---
 
