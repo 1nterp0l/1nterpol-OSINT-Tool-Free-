@@ -1,76 +1,166 @@
-
 # 🌐 1NTERPOL MATRIX RADAR | Advanced Cyber-Detector Framework
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-6.0-blue" alt="Version">
-  <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
-  <img src="https://img.shields.io/badge/Language-Python-orange" alt="Language">
+  <img src="https://img.shields.io/badge/Version-6.0-blue?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/Language-Python-orange?style=for-the-badge" alt="Language">
 </p>
-
-## 📖 Introduction
-**1NTERPOL Matrix Radar** est une plateforme modulaire d'investigation numérique, conçue pour automatiser les tâches critiques de reconnaissance (Recon) et d'audit de sécurité. Dans un environnement où la collecte d'informations est le pilier de toute enquête, cet outil centralise la puissance de traitement pour offrir une vision claire, structurée et rapide des infrastructures cibles.
-
-Développé en **Python pur**, ce framework élimine la lourdeur des dépendances externes tout en garantissant des performances de classe industrielle grâce à son architecture orientée objet et son moteur de traitement multithread.
-
----
-
-## 🚀 Fonctionnalités Avancées
-
-### 🔍 Reconnaissance Réseau & Empreinte Digitale
-* **Banner Grabbing Aggressif :** Identification précise des services via des handshakes personnalisés. Ne vous contentez plus de savoir qu'un port est ouvert : découvrez la version exacte du logiciel tournant en arrière-plan.
-* **Scan de Ports Multithreadé :** Moteur haute performance utilisant `ThreadPoolExecutor` pour scanner des plages entières en un temps record.
-* **Analyse de Topologie :** Détection des vecteurs d'attaque et analyse de la réactivité réseau.
-
-### 🛡️ Audit de Sécurité & Veille
-* **Hardening Check :** Analyse des en-têtes de sécurité HTTP, vérification de la présence de politiques HSTS, et détection de CMS.
-* **DNS Intelligence :** Audit approfondi de la configuration des zones DNS (SPF, DMARC, MX) pour détecter les failles d'usurpation (spoofing) et les mauvaises configurations de domaine.
-* **API Enrichment :** Intégration native des flux de données Shodan et VirusTotal pour corréler vos découvertes locales avec des bases de menaces mondiales.
-
-### 📊 Gestion de l'Investigation
-* **Base de Données SQLite :** Chaque action est horodatée et archivée localement. Idéal pour le suivi de dossier sur le long terme.
-* **Générateur de Rapports :** Exportation automatisée des logs pour structurer vos découvertes.
-* **Mode CLI "Ninja" :** Automatisez vos tâches sans interface graphique, parfait pour l'intégration dans des scripts de défense ou de tests d'intrusion.
-
----
-
-## 🛠️ Architecture du Framework
-
-Le moteur **"The Architect" (v6.0)** est structuré pour permettre une scalabilité maximale :
-
-1. **`CyberTools` (Core) :** Gère la persistance des données et les interfaces de bas niveau.
-2. **`Scanner` (Moteur) :** Implémente la logique métier d'analyse réseau et système.
-3. **`MenuHandler` (Interface) :** Offre une navigation fluide entre les modules d'investigation.
-
-
-
----
-
-## ⚙️ Installation & Mise en route
-
-### Prérequis
-* Python 3.8 ou supérieur.
-* Aucune bibliothèque tierce n'est requise (Standard Library uniquement).
-
-### Installation
-```bash
-# Cloner le dépôt
-git clone [https://github.com/votre-nom/interpol-matrix-radar.git](https://github.com/votre-nom/interpol-matrix-radar.git)
-
-# Entrer dans le répertoire
-cd interpol-matrix-radar
-
-## 📷 Aperçu
 
 <p align="center">
-  <img src="interpol.png" width="900">
+  <img src="interpol.png" width="100%">
 </p>
 
-## ⚙️ Installation
+---
+
+## 📖 Introduction
+
+**1NTERPOL Matrix Radar** est une plateforme modulaire d’investigation numérique conçue pour automatiser les tâches de reconnaissance (Recon), d’analyse réseau et d’audit de sécurité.
+
+Développé entièrement en **Python pur**, ce framework fournit une infrastructure légère, rapide et extensible sans dépendances externes.
+
+Le moteur combine :
+- OSINT
+- Analyse réseau
+- Investigation digitale
+- Corrélation de données
+- Surveillance de cibles
+- Audit de sécurité
+
+---
+
+# 🚀 Fonctionnalités
+
+## 🔍 Reconnaissance Réseau
+
+- Banner Grabbing avancé
+- Scan de ports multithreadé
+- Détection de services
+- Analyse de latence
+- Reverse DNS
+- Fingerprinting technologies
+- Analyse SSL/TLS
+- WHOIS / RDAP
+
+---
+
+## 🛡️ Audit & Sécurité
+
+- Vérification headers HTTP
+- Détection CMS
+- Analyse SPF / DMARC / MX
+- Détection de mauvaises configurations
+- Intégration VirusTotal
+- Intégration Shodan
+- Vérification CVE / NIST
+
+---
+
+## 🌐 Modules OSINT
+
+- Recherche pseudo
+- Data breaches
+- HIBP Check
+- Analyse réseaux sociaux
+- Wayback Machine
+- Pastes exposés
+- Crypto wallets
+- Dark web check
+
+---
+
+## 📊 Investigation
+
+- Base SQLite intégrée
+- Logs horodatés
+- Export de rapports
+- Watchlist cibles
+- Notes d’investigation
+- Profil OSINT complet
+
+---
+
+# 🛠️ Architecture
+
+Le moteur **The Architect v6.0** est structuré autour de plusieurs composants :
+
+| Module | Description |
+|---|---|
+| `CyberTools` | Gestion des données et APIs |
+| `Scanner` | Analyse réseau et sécurité |
+| `MenuHandler` | Interface CLI |
+| `Database Engine` | Archivage SQLite |
+| `Recon Engine` | Modules OSINT |
+
+---
+
+# 📷 Aperçu
+
+<p align="center">
+  <img src="interpol.png" width="100%">
+</p>
+
+---
+
+# ⚙️ Installation
+
+## 📌 Prérequis
+
+- Python 3.8+
+- Linux / Windows / macOS
+- Aucune dépendance externe
+
+---
+
+## 🚀 Setup
 
 ```bash
+# Cloner le dépôt
 git clone https://github.com/ton-user/interpol-matrix-radar.git
 
+# Entrer dans le dossier
 cd interpol-matrix-radar
 
+# Lancer le framework
 python main.py
-```
+
+
+[01] Recherche Pseudo
+[02] GeoIP Avancé
+[03] DataBreaches Global
+[04] Email HIBP Check
+[05] Métadonnées + Entropie
+[06] DNS Complet + Subdomain
+[07] Email OSINT
+[08] Pivot Téléphonique
+[09] Instagram Anonyme
+[10] Google Dorks
+[11] Rapport HTML/JSON
+[12] Scanner Ports 50+
+[13] MAC Lookup
+[14] Discord Snowflake
+[15] Reverse DNS
+[16] Tracker Technologies
+[17] HashBase64 + ROT13
+[18] Extracteur Liens
+[19] User-Agent Analyzer
+[20] Subnet Calculator
+[21] En-têtes HTTP Sécurité
+[22] Validateur RegEx+
+[23] Latence Multi-Ping
+[24] Détecteur CMS+
+[25] VirusTotal API
+[26] Shodan API
+[27] Historique SQLite
+[28] SSL/TLS Analyse
+[29] WHOIS / RDAP
+[30] Pastes Exposés
+[31] Wayback Machine
+[32] AbuseIPDB
+[33] Crypto Wallets
+[34] Dark Web Check
+[35] CVE / NVD NIST
+[36] Profil OSINT Full
+[37] FULL AUTO SCAN
+[38] Bloc-Notes OSINT
+[39] Watchlist Cibles
+[40] Config Clés API
